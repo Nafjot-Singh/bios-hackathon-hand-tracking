@@ -1,0 +1,5 @@
+# Hand-tracking pipeline only (detector, tracker, metrics, graphs, report)
+opencv-python>=4.10.0
+mediapipe>=0.10.0
+numpy>=1.24.0
+matplotlib>=3.8.0

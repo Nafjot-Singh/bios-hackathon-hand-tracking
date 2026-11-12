@@ -1,0 +1,31 @@
+# HandTrace - all workstreams (hand tracking, objects & contact, evaluation)
+# Install:  pip install -r requirements.txt
+# Only need the hand-tracking pipeline (main.py)?  pip install -r requirements-core.txt
+#
+# Notes
+# - Lower bounds only: the three workstreams were developed on different versions.
+# - Install a CUDA build of torch from https://pytorch.org first if you want GPU
+#   (the RTX 2050 setup used CUDA 12.6), then run this file.
+# - Use opencv-python only. Do NOT also install opencv-contrib-python: the two
+#   packages overwrite each other's files.
+
+-r requirements-core.txt
+
+# --- Objects & contact (YOLO-World + ByteTrack) ---
+# (Ultralytics downloads the YOLO-World weights and extra files on first use: needs internet once.)
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.3.0
+pydantic>=2.0.0
+pyyaml>=6.0
+
+# --- Evaluation & event naming ---
+pandas>=2.0.0
+tqdm>=4.66.0
+groq>=0.11.0
+google-genai>=1.0.0
+python-dotenv>=1.0.0
+pymupdf>=1.24.0
+
+# --- Development ---
+pytest>=8.0.0

@@ -1,0 +1,55 @@
+# === DATA & MEDIA (never commit footage) ===
+data/
+outputs/
+weights/
+egohack-data/
+input/*
+!input/.gitkeep
+*.pt
+*.onnx
+*.engine
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.png
+*.jpg
+*.jpeg
+frames/
+screenshots/
+contact_sheets/
+evidence_frames/
+
+# === EVALUATION WORKSPACE & CACHES ===
+eval_workspace/
+api_cache/
+
+# === LOCAL CONFIG / SECRETS (contain user paths or API keys) ===
+configs/local.yaml
+.env
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+egohack/
+.pytest_cache/
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS ===
+Thumbs.db
+.DS_Store
